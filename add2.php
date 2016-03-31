@@ -11,6 +11,6 @@ $c=$_POST['data2'];
 	$sql->close();
 		echo"添加条目成功";
 		
-		
+	
 }
 ?>

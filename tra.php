@@ -19,7 +19,5 @@ $sql->update1($a,$d,$b);
 $sql->update($a,$c,$b);
 $sql->close();
 echo"修改类别成功";
-
-
 }
 ?>
