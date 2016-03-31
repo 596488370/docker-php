@@ -9,11 +9,13 @@ class operate
 	private $data; //字段查询
     /*连接数据库
      */
+
     function __construct()
     {
     /*替换为你自己的数据库名*/
-	$con=mysql_connect(MYSQL_PORT_3306_TCP_ADDR.':'.MYSQL_PORT_3306_TCP_PORT,MYSQL_USERNAME,MYSQL_PASSWORD);
-	$res=mysql_select_db(MYSQL_INSTANCE_NAME,$con);
+    $res = new PDO("mysql:host=MYSQL_PORT_3306_TCP_ADDR;dbname=MYSQL_INSTANCE_NAME", YSQL_USERNAME, MYSQL_PASSWORD);
+	//$con=mysql_connect(MYSQL_PORT_3306_TCP_ADDR.':'.MYSQL_PORT_3306_TCP_PORT,MYSQL_USERNAME,MYSQL_PASSWORD);
+	//$res=mysql_select_db(MYSQL_INSTANCE_NAME,$con);
 	//$dbname = 'rKcpsFLnlIGuZxMaxvBK';
 	/*填入数据库连接信息*/
 	//$host = 'sqld.duapp.com';
@@ -26,13 +28,13 @@ class operate
 	//$con = @mysql_connect("{$host}:{$port}",$user,$pwd,true);
 	//$res=mysql_select_db($dbname,$con);
 	//mysql_query("set names gb2312",$con);
-	mysql_query("set names utf8",$con);
-if(!$con) {
-    die("Connect Server Failed: " . mysql_error());
-	}
+	//mysql_query("set names utf8",$con);
+//if(!$con) {
+  //  die("Connect Server Failed: " . mysql_error());
+	//}
 	/*连接成功后立即调用mysql_select_db()选中需要连接的数据库*/
 if(!$res) {
-    die("Select Database Failed: " . mysql_error($con));
+    die("Select Database Failed: " . mysql_error($res));
 	}
   }
 	 
