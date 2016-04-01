@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-<title>ä¸ªäººç½‘å€æ”¶è—å¤¹ç®¡ç†ç³»ç»Ÿ</title>
+<title>¸öÈËÍøÖ·ÊÕ²Ø¼Ğ¹ÜÀíÏµÍ³</title>
 <link href="css/flick/jquery-ui-1.10.4.custom.css" rel="stylesheet">
 	<script src="js/jquery-1.10.2.js"></script>
 	<script src="js/jquery-ui-1.10.4.custom.js"></script>
@@ -60,7 +60,7 @@ $( "#confirm" ).dialog({
       height:150,
       modal: false,
       buttons: {
-        "ç¡®å®š": function() {
+        "È·¶¨": function() {
 		var a = name.val();
           $.post("del.php",{delclass:a},function(a){
   alert(a);
@@ -82,10 +82,10 @@ $( "#dialog-confirm" ).dialog({
       height:140,
       modal: true,
       buttons: {
-        "æ·»åŠ ç±»åˆ«": function() {
+        "Ìí¼ÓÀà±ğ": function() {
           $( "#dialog-form" ).dialog( "open" );  
         },
-        "æ·»åŠ æ¡ç›®": function() {
+        "Ìí¼ÓÌõÄ¿": function() {
          $( "#dialog-choice" ).dialog( "open" );  
 		 round=2;
 		 $.post("select1.php",{selname:round},function(a){
@@ -94,7 +94,7 @@ $( "#dialog-confirm" ).dialog({
 		//alert(obj[0]);
 		for(var i=0; i<obj.length; i++)  
   {  
-      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ä¸ºSelectè¿½åŠ ä¸€ä¸ªOption(ä¸‹æ‹‰é¡¹)
+      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ÎªSelect×·¼ÓÒ»¸öOption(ÏÂÀ­Ïî)
 	// alert(obj[i]);
   }  
 
@@ -104,7 +104,7 @@ $( "#dialog-confirm" ).dialog({
         }
       },
 	 close: function() {
-	 $("#users tr").remove();ã€€
+	 $("#users tr").remove();¡¡
 				interface();
 			}
     });
@@ -115,7 +115,7 @@ $( "#dialog-confirm1" ).dialog({
       height:140,
       modal: true,
       buttons: {
-        "ä¿®æ”¹ç±»åˆ«": function() {
+        "ĞŞ¸ÄÀà±ğ": function() {
         $( "#dialog-choice" ).dialog( "open" ); 
 		round=1;
 		$.post("select1.php",{selname:round},function(a){
@@ -124,7 +124,7 @@ $( "#dialog-confirm1" ).dialog({
 		//alert(obj[0]);
 		for(var i=0; i<obj.length; i++)  
   {  
-      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ä¸ºSelectè¿½åŠ ä¸€ä¸ªOption(ä¸‹æ‹‰é¡¹)
+      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ÎªSelect×·¼ÓÒ»¸öOption(ÏÂÀ­Ïî)
 	// alert(obj[i]);
   }  
 
@@ -133,7 +133,7 @@ $( "#dialog-confirm1" ).dialog({
     });
  
         },
-        "ä¿®æ”¹æ¡ç›®": function() {
+        "ĞŞ¸ÄÌõÄ¿": function() {
         $( "#dialog-choice" ).dialog( "open" );
 		round=3;
 		$.post("select1.php",{selname:round},function(a){
@@ -142,7 +142,7 @@ $( "#dialog-confirm1" ).dialog({
 		//alert(obj[0]);
 		for(var i=0; i<obj.length; i++)  
   {  
-      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ä¸ºSelectè¿½åŠ ä¸€ä¸ªOption(ä¸‹æ‹‰é¡¹)
+      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ÎªSelect×·¼ÓÒ»¸öOption(ÏÂÀ­Ïî)
 	// alert(obj[i]);
   }  	 
     });
@@ -150,7 +150,7 @@ $( "#dialog-confirm1" ).dialog({
         }
       },
 	  close: function() {
-	 $("#users tr").remove();ã€€
+	 $("#users tr").remove();¡¡
 				interface();
 			}
     });
@@ -161,7 +161,7 @@ $( "#dialog-confirm2" ).dialog({
       height:140,
       modal: true,
       buttons: {
-        "åˆ é™¤ç±»åˆ«": function() {
+        "É¾³ıÀà±ğ": function() {
           $( "#dialog-choice" ).dialog( "open" ); 
 	  round=4;	
 	  $.post("select1.php",{selname:round},function(a){
@@ -170,13 +170,13 @@ $( "#dialog-confirm2" ).dialog({
 		//alert(obj[0]);
 		for(var i=0; i<obj.length; i++)  
   {  
-      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ä¸ºSelectè¿½åŠ ä¸€ä¸ªOption(ä¸‹æ‹‰é¡¹)
+      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ÎªSelect×·¼ÓÒ»¸öOption(ÏÂÀ­Ïî)
 	// alert(obj[i]);
   }  	 
     });
 		 
         },
-        "åˆ é™¤æ¡ç›®": function() {
+        "É¾³ıÌõÄ¿": function() {
          $( "#dialog-choice" ).dialog( "open" );  
 		 round=5;
 		 $.post("select1.php",{selname:round},function(a){
@@ -185,40 +185,40 @@ $( "#dialog-confirm2" ).dialog({
 		//alert(obj[0]);
 		for(var i=0; i<obj.length; i++)  
   {  
-      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ä¸ºSelectè¿½åŠ ä¸€ä¸ªOption(ä¸‹æ‹‰é¡¹)
+      $("#name").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ÎªSelect×·¼ÓÒ»¸öOption(ÏÂÀ­Ïî)
 	// alert(obj[i]);
   }  	 
     });
         }
       },
 	  close: function() {
-	 $("#users tr").remove();ã€€
+	 $("#users tr").remove();¡¡
 				interface();
 			}
     });
-  //æ·»åŠ ä¸€ä¸ªæ•°æ®åˆ°å¤´æ•°æ®è¡¨
+  //Ìí¼ÓÒ»¸öÊı¾İµ½Í·Êı¾İ±í
 $( "#dialog-form" ).dialog({  
             autoOpen: false,  
             height: 180,  
             //width: 350,  
             modal: false,  
             buttons: {  
-                "ç¡®å®š": function() { 
+                "È·¶¨": function() { 
                   if (add.val()=="")
-				  alert("è¾“å…¥ä¸€ä¸ªå€¼");
+				  alert("ÊäÈëÒ»¸öÖµ");
 				  
 				  else{
 				  var a=add.val();
 				 var b=name.val();
 				 if(round==""){
-				 //æ·»åŠ 
-				   //define ('XAJAX_DEFAULT_CHAR_ENCODING', 'GB2312' ); //æ”¯æŒä¸­æ–‡
+				 //Ìí¼Ó
+				   //define ('XAJAX_DEFAULT_CHAR_ENCODING', 'GB2312' ); //Ö§³ÖÖĞÎÄ
 $.post("add1.php",{add:a,name:b},function(a){
   alert(a);
     });
   // alert(b);
   }else if(round==1){
-  //ä¿®æ”¹
+  //ĞŞ¸Ä
   $.post("tra.php",{tra:round,data:a,traname:b},function(a){
   alert(a);
     });
@@ -238,15 +238,15 @@ $.post("add1.php",{add:a,name:b},function(a){
 				add.val("");
 			}
         }); 
-		  //æ·»åŠ ä¸€ä¸ªæ•°æ®åˆ°å­æ•°æ®è¡¨
+		  //Ìí¼ÓÒ»¸öÊı¾İµ½×ÓÊı¾İ±í
 $( "#dialog-form1" ).dialog({  
             autoOpen: false,  
             height: 230,  
             modal: false,  
             buttons: {  
-                "ç¡®å®š": function() {  
-                    if (additem.val()==""||addip.val()==""){//æ–°å¢  
-                      alert("è¾“å…¥ä¸€ä¸ªå€¼");
+                "È·¶¨": function() {  
+                    if (additem.val()==""||addip.val()==""){//ĞÂÔö  
+                      alert("ÊäÈëÒ»¸öÖµ");
                     }  else{
 					 var b=name.val();
 					 var a1=additem.val();
@@ -279,14 +279,14 @@ $( "#dialog-form1" ).dialog({
           
         }); 
 		
-		//é€‰æ‹©ä¸€ä¸ªç±»åˆ«ï¼Œè¿›å…¥ç‰¹å®šè¡¨
+		//Ñ¡ÔñÒ»¸öÀà±ğ£¬½øÈëÌØ¶¨±í
 $( "#dialog-choice" ).dialog({  
             autoOpen: false,  
             height: 120,
             modal: false,  
             buttons: {  
-                "ç¡®å®š": function() {  
-                    if (round==""){//æ–°å¢  
+                "È·¶¨": function() {  
+                    if (round==""){//ĞÂÔö  
 						$( "#dialog-form" ).dialog( "open" );  
 					// alert(name.val());
                     }
@@ -298,7 +298,7 @@ $( "#dialog-choice" ).dialog({
 			var a=name.val();
 		//		add.val(a);
 			if(a==""){
-			alert("è¯·é€‰æ‹©ä¸€ä¸ªç±»åˆ«");
+			alert("ÇëÑ¡ÔñÒ»¸öÀà±ğ");
 			}else{
 				$( "#dialog-form1" ).dialog( "open" );
 			}				
@@ -308,17 +308,17 @@ $( "#dialog-choice" ).dialog({
 			var b="";
 		//		add.val(a);
 			if(a==""){
-			alert("è¯·é€‰æ‹©ä¸€ä¸ªç±»åˆ«");
+			alert("ÇëÑ¡ÔñÒ»¸öÀà±ğ");
 			}else{
 				$( "#dialog-change" ).dialog( "open" );
-				//traitem.val("ä¿®æ”¹äº†åç§°å°†æ— æ³•ä¿®æ”¹ipï¼Œéœ€ä¸¤æ­¥å®Œæˆï¼");
+				//traitem.val("ĞŞ¸ÄÁËÃû³Æ½«ÎŞ·¨ĞŞ¸Äip£¬ĞèÁ½²½Íê³É£¡");
 				$.post("select1.php",{selname:b,table:a},function(a){
 		 var obj = eval(a);
 		// alert(obj);
 		//alert(obj[0]);
 		for(var i=0; i<obj.length; i++)  
   {  
-      $("#itemname").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ä¸ºSelectè¿½åŠ ä¸€ä¸ªOption(ä¸‹æ‹‰é¡¹)
+      $("#itemname").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ÎªSelect×·¼ÓÒ»¸öOption(ÏÂÀ­Ïî)
 	// alert(obj[i]);
   }  	 
     });
@@ -328,18 +328,18 @@ $( "#dialog-choice" ).dialog({
 			var a=name.val();
 		//		add.val(a);
 			if(a==""){
-			alert("è¯·é€‰æ‹©ä¸€ä¸ªç±»åˆ«");
+			alert("ÇëÑ¡ÔñÒ»¸öÀà±ğ");
 			}else{
 				$( "#confirm" ).dialog( "open" );  
 			}
 				
 		}			else if(round==5){
-			traitem.val("é€‰æ‹©è¦åˆ é™¤çš„ä¸€é¡¹");
-			traip.val("é€‰æ‹©è¦åˆ é™¤çš„ä¸€é¡¹");
+			traitem.val("Ñ¡ÔñÒªÉ¾³ıµÄÒ»Ïî");
+			traip.val("Ñ¡ÔñÒªÉ¾³ıµÄÒ»Ïî");
 			var a=name.val();
 			var b="";
 			if(a==""){
-			alert("è¯·é€‰æ‹©ä¸€ä¸ªç±»åˆ«");
+			alert("ÇëÑ¡ÔñÒ»¸öÀà±ğ");
 			}else{
 				$( "#dialog-change" ).dialog( "open" );   
 				$.post("select1.php",{selname:b,table:a},function(a){
@@ -348,7 +348,7 @@ $( "#dialog-choice" ).dialog({
 		//alert(obj[0]);
 		for(var i=0; i<obj.length; i++)  
   {  
-      $("#itemname").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ä¸ºSelectè¿½åŠ ä¸€ä¸ªOption(ä¸‹æ‹‰é¡¹)
+      $("#itemname").append("<option value='"+obj[i]+"'>"+obj[i]+"</option>"); //ÎªSelect×·¼ÓÒ»¸öOption(ÏÂÀ­Ïî)
 	// alert(obj[i]);
   }  	 
     });
@@ -361,36 +361,36 @@ $( "#dialog-choice" ).dialog({
 					round="";
 					name.val("");
 					$("#name").empty();
-					$("#name").append("<option value=''>è¯·é€‰æ‹©...</option>");
-				//	alert("å–æ¶ˆé€‰æ‹©");  					
+					$("#name").append("<option value=''>ÇëÑ¡Ôñ...</option>");
+				//	alert("È¡ÏûÑ¡Ôñ");  					
                 }  
             },  
 			close: function() {
 				round="";
 					name.val("");
 					$("#name").empty();
-					$("#name").append("<option value=''>è¯·é€‰æ‹©...</option>");
+					$("#name").append("<option value=''>ÇëÑ¡Ôñ...</option>");
 			}
         }); 
-		//ä¿®æ”¹ä¸€ä¸ªæ•°æ®åˆ°æ•°æ®è¡¨
+		//ĞŞ¸ÄÒ»¸öÊı¾İµ½Êı¾İ±í
 $( "#dialog-change" ).dialog({  
             autoOpen: false,  
             height: 250,  
            // width: 350,  
             modal: false,  
             buttons: {  
-                "ç¡®å®š": function() {  
+                "È·¶¨": function() {  
 				if(round==5){
 				var a=name.val();
 				var b=itemname.val();
 				if(b=="")
-				{alert("é€‰æ‹©ä¸€ä¸ªæ¡ç›®");}
+				{alert("Ñ¡ÔñÒ»¸öÌõÄ¿");}
 				else{
 				$.post("del.php",{deltable:a,delitem:b},function(a){
   alert(a);
     });}
 				}else{	
-                    if (traitem.val()!=""&&traip.val()!=""&&itemname.val()!=""){//ä¿®æ”¹ 
+                    if (traitem.val()!=""&&traip.val()!=""&&itemname.val()!=""){//ĞŞ¸Ä 
 					var k=name.val();
                     var b=itemname.val();
 					var a1=traitem.val();
@@ -400,7 +400,7 @@ $( "#dialog-change" ).dialog({
     });
 // alert(b);
                     } else{
-				alert("è¾“å…¥ä¸€ä¸ªå€¼");
+				alert("ÊäÈëÒ»¸öÖµ");
 					} 
 					}
                   
@@ -411,7 +411,7 @@ $( "#dialog-change" ).dialog({
 				traip.val("");
 				itemname.val("");
 				$("#itemname").empty();
-				$("#itemname").append("<option value=''>è¯·é€‰æ‹©...</option>");
+				$("#itemname").append("<option value=''>ÇëÑ¡Ôñ...</option>");
                     $( this ).dialog( "close" );  
                 }  
             },
@@ -420,7 +420,7 @@ $( "#dialog-change" ).dialog({
 				traip.val("");
 				itemname.val("");
 				$("#itemname").empty();
-				$("#itemname").append("<option value=''>è¯·é€‰æ‹©...</option>");
+				$("#itemname").append("<option value=''>ÇëÑ¡Ôñ...</option>");
 			}
         }); 
 		
@@ -428,7 +428,7 @@ $( "#dialog-change" ).dialog({
 $( "#add-choice" )  
             .button()  
             .click(function() {  
-                //æ¸…ç©ºè¡¨å•åŸŸ  
+                //Çå¿Õ±íµ¥Óò  
                 allFields.each(function(idx){  
                     this.value="";  
                 });  
@@ -438,7 +438,7 @@ $( "#add-choice" )
 $( "#tra-choice" )  
             .button()  
             .click(function() {  
-                //æ¸…ç©ºè¡¨å•åŸŸ  
+                //Çå¿Õ±íµ¥Óò  
                 allFields.each(function(idx){  
                     this.value="";  
                 });  
@@ -448,7 +448,7 @@ $( "#tra-choice" )
 $( "#del-choice" )  
             .button()  
             .click(function() {  
-                //æ¸…ç©ºè¡¨å•åŸŸ  
+                //Çå¿Õ±íµ¥Óò  
                 allFields.each(function(idx){  
                     this.value="";  
                 });  
@@ -479,7 +479,7 @@ $.post("select1.php",{selname:b},function(a){
     var a1 = obj[i];
 	$.post("select1.php",{selname:c,table:a1},function(a){
 	var obj1 = eval(a);
-	for(var k=0;k<obj1.length;k++){        //ä¸€ç»´é•¿åº¦ä¸ºi,iä¸ºå˜é‡ï¼Œå¯ä»¥æ ¹æ®å®é™…æƒ…å†µæ”¹å˜
+	for(var k=0;k<obj1.length;k++){        //Ò»Î¬³¤¶ÈÎªi,iÎª±äÁ¿£¬¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿ö¸Ä±ä
 	if(k>=index)
 	{
 	index=k+1;
@@ -506,14 +506,14 @@ for(var i=0; i<obj.length; i++)
 	var obj2 = eval(b);
 	//alert(i);
 	//alert(a);
-	for(var k=0;k<index;k++){        //ä¸€ç»´é•¿åº¦ä¸ºi,iä¸ºå˜é‡ï¼Œå¯ä»¥æ ¹æ®å®é™…æƒ…å†µæ”¹å˜
+	for(var k=0;k<index;k++){        //Ò»Î¬³¤¶ÈÎªi,iÎª±äÁ¿£¬¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿ö¸Ä±ä
 	$( "#users tbody" ).append( "<tr>" + "</tr>" );
 	//tArray[a][k]=obj1[k]; 
 	//alert(tArray[a]);
 	//$( "#users tbody tr:eq(0)" ).append( "<td>" + obj1[k] + "</td>" );
 	//$( "#users tbody tr" ).append( "<td>" + obj1[k] + "</td>" );
 	}
-	for(var k=0;k<index;k++){        //ä¸€ç»´é•¿åº¦ä¸ºi,iä¸ºå˜é‡ï¼Œå¯ä»¥æ ¹æ®å®é™…æƒ…å†µæ”¹å˜
+	for(var k=0;k<index;k++){        //Ò»Î¬³¤¶ÈÎªi,iÎª±äÁ¿£¬¿ÉÒÔ¸ù¾İÊµ¼ÊÇé¿ö¸Ä±ä
 	//$( "#users tbody" ).append( "<tr>" + "</tr>" );
 	//tArray[a][k]=obj1[k]; 
 	//alert(tArray[a]);
@@ -555,66 +555,66 @@ for(var i=0; i<obj.length; i++)
   
   </head>
 <body>
-<button id="add-choice">æ·»åŠ </button>
-<button id="tra-choice">ä¿®æ”¹</button>
-<button id="del-choice">åˆ é™¤</button>
+<button id="add-choice">Ìí¼Ó</button>
+<button id="tra-choice">ĞŞ¸Ä</button>
+<button id="del-choice">É¾³ı</button>
 <div class="demo">  
 
 
-<div  id="dialog-confirm" title="é€‰æ‹©æ·»åŠ ç±»åˆ«oræ¡ç›®">
- <p><span class="ui-icon ui-icon-help" style="float:left; margin:0 7px 20px 0;"></span>é€‰æ‹©æ·»åŠ ä¸€ä¸ªç±»åˆ«è¿˜æ˜¯é€‰æ‹©åœ¨ä¸€ä¸ªç±»åˆ«é‡Œæ·»åŠ æ¡ç›®</p>
+<div  id="dialog-confirm" title="Ñ¡ÔñÌí¼ÓÀà±ğorÌõÄ¿">
+ <p><span class="ui-icon ui-icon-help" style="float:left; margin:0 7px 20px 0;"></span>Ñ¡ÔñÌí¼ÓÒ»¸öÀà±ğ»¹ÊÇÑ¡ÔñÔÚÒ»¸öÀà±ğÀïÌí¼ÓÌõÄ¿</p>
 </div>
 
-<div  id="dialog-confirm1" title="é€‰æ‹©ä¿®æ”¹ç±»åˆ«oræ¡ç›®">
- <p><span class="ui-icon ui-icon-help" style="float:left; margin:0 7px 20px 0;"></span>é€‰æ‹©ä¿®æ”¹ä¸€ä¸ªç±»åˆ«è¿˜æ˜¯é€‰æ‹©ä¿®æ”¹ä¸€ä¸ªç±»åˆ«é‡Œçš„æ¡ç›®</p>
+<div  id="dialog-confirm1" title="Ñ¡ÔñĞŞ¸ÄÀà±ğorÌõÄ¿">
+ <p><span class="ui-icon ui-icon-help" style="float:left; margin:0 7px 20px 0;"></span>Ñ¡ÔñĞŞ¸ÄÒ»¸öÀà±ğ»¹ÊÇÑ¡ÔñĞŞ¸ÄÒ»¸öÀà±ğÀïµÄÌõÄ¿</p>
 </div>
 
-<div  id="dialog-confirm2" title="é€‰æ‹©åˆ é™¤ç±»åˆ«oræ¡ç›®">
- <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>é€‰æ‹©åˆ é™¤ä¸€ä¸ªç±»åˆ«è¿˜æ˜¯é€‰æ‹©åˆ é™¤ä¸€ä¸ªç±»åˆ«é‡Œçš„æ¡ç›®</p>
+<div  id="dialog-confirm2" title="Ñ¡ÔñÉ¾³ıÀà±ğorÌõÄ¿">
+ <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Ñ¡ÔñÉ¾³ıÒ»¸öÀà±ğ»¹ÊÇÑ¡ÔñÉ¾³ıÒ»¸öÀà±ğÀïµÄÌõÄ¿</p>
 </div>
 
-<div  id="confirm" title="ç¡®å®šåˆ é™¤">
- <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>é€‰æ‹©åˆ é™¤å°†ä¸å¯è¿˜åŸï¼</p>
+<div  id="confirm" title="È·¶¨É¾³ı">
+ <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Ñ¡ÔñÉ¾³ı½«²»¿É»¹Ô­£¡</p>
 </div>
   
-<div id="dialog-form" title="æ·»åŠ ã€ä¿®æ”¹ç±»åˆ«">  
+<div id="dialog-form" title="Ìí¼Ó¡¢ĞŞ¸ÄÀà±ğ">  
     <form>  
     <fieldset>  
-        <label for="name">è¾“å…¥åç§°</label>  
+        <label for="name">ÊäÈëÃû³Æ</label>  
         <input type="text" name="name" id="add" class="text" />  
         <input type="hidden" name="rowindex" id="rowindex" value=""/>  
     </fieldset>  
     </form>  
 </div>  
 
-<div id="dialog-form1" title="æ·»åŠ æ¡ç›®">  
+<div id="dialog-form1" title="Ìí¼ÓÌõÄ¿">  
     <form>  
     <fieldset>  
-        <label for="name">ç½‘å€åç§°</label>  
+        <label for="name">ÍøÖ·Ãû³Æ</label>  
         <input type="text" name="name" id="additem" class="text" />  
-		<label for="name">IPåœ°å€</label>  
+		<label for="name">IPµØÖ·</label>  
         <input type="text" name="name" id="addip" class="text" />  
         <input type="hidden" name="rowindex" id="rowindex" value=""/>  
     </fieldset>  
     </form>  
 </div>  
 
-<div id="dialog-choice" title="é€‰æ‹©">  
+<div id="dialog-choice" title="Ñ¡Ôñ">  
   
  
          <select id="name" value="" style="width:250px">
-    <option value="">è¯·é€‰æ‹©...</option>
+    <option value="">ÇëÑ¡Ôñ...</option>
   </select>
 </div>  
 
-<div id="dialog-change" title="ä¿®æ”¹\åˆ é™¤" value="">  
+<div id="dialog-change" title="ĞŞ¸Ä\É¾³ı" value="">  
          <select id="itemname" value="" style="width:250px">
-    <option value="">è¯·é€‰æ‹©...</option>
+    <option value="">ÇëÑ¡Ôñ...</option>
   </select>
-  <label for="name">ä¿®æ”¹æ¡ç›®</label>  
-        <label for="name">ç½‘å€åç§°</label>  
+  <label for="name">ĞŞ¸ÄÌõÄ¿</label>  
+        <label for="name">ÍøÖ·Ãû³Æ</label>  
         <input type="text" name="name" id="traitem" class="text" />  
-		<label for="name">IPåœ°å€</label>  
+		<label for="name">IPµØÖ·</label>  
         <input type="text" name="name" id="traip" class="text" />  
 </div>  
   
