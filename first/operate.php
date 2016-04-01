@@ -47,7 +47,7 @@ class operate
 	//mysql_query("set names utf8",$con);
 //if(!$con) {
  //   die("Connect Server Failed: " . mysql_error());
-	}
+//	}
 	/*连接成功后立即调用mysql_select_db()选中需要连接的数据库*/
 if(!$res) {
     die("Select Database Failed: " . mysql_error($res));
