@@ -3,4 +3,4 @@ FROM tutum/apache-php
 RUN apt-get update && apt-get install -yq vim && rm -rf /var/lib/apt/lists/*
 RUN rm -fr /app
 ADD ./test* /app
-RUN composer install
+#RUN composer install
