@@ -5,6 +5,7 @@ FROM daocloud.io/php:5.6-apache
 # pdo_mysql 为 PHP 连接 MySQL 扩展
 RUN docker-php-ext-install pdo_mysql
 
-# /php/ 为 Apache 目录
+# /var/www/html/ 为 Apache 目录
+# ADD可以拷贝文件夹内所有
 ADD ./first* /var/www/html/
 #COPY first/* /var/www/html/

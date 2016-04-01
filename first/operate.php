@@ -63,7 +63,7 @@ if(!$res) {
     {
 		$data = array();  
         $query="select classname from $table";
-		$result=mysql_query($query)or die("error".mysql_error);
+		$result=$this->res->query($query)or die("error".mysql_error);
 		while($row = mysql_fetch_array($result)){
 		//echo "classname：".$row[0]."<br />";
 		array_push($data,$row[0]);  
@@ -85,7 +85,7 @@ if(!$res) {
     {
 		$data = array();  
         $query="select ippath from $table";
-		$result=mysql_query($query)or die("error".mysql_error);
+		$result=$this->res->query($query)or die("error".mysql_error);
 		while($row = mysql_fetch_array($result)){
 		//echo "classname：".$row[0]."<br />";
 		array_push($data,$row[0]);  
@@ -106,7 +106,7 @@ if(!$res) {
     {
 	//alter table 表名 rename to 新表名
         $sqlStr = "alter table $table rename to $table1";
-        return mysql_query($sqlStr);
+        return $this->res->query($sqlStr);
     }
 
     /**
@@ -117,13 +117,13 @@ if(!$res) {
     {
 	
         $sqlStr = "update $table set classname='$data' where classname='$where'";
-        return mysql_query($sqlStr);
+        return $this->res->query($sqlStr);
     }
 	public function update1($table,$data,$where)
     {
 	
         $sqlStr = "update $table set ippath='$data' where classname='$where'";
-        return mysql_query($sqlStr);
+        return $this->res->query($sqlStr);
     }
 
     /**
@@ -132,13 +132,13 @@ if(!$res) {
     public function insertdata($table,$add)
     {
 	   $newtable="create table if not exists $table(classname varchar(50) not null)";
-	   if(!mysql_query($newtable))
+	   if(!$this->res->query($newtable))
 {
 		echo "创建数据表出错，错误号：".mysql_errno()." 错误原因：".mysql_error();
 } 
        //$b="insert into $table(classname)value('$add')";
 	    $b="insert into $table(classname)value('$add')";
-		$c=mysql_query($b);
+		$c=$this->res->query($b);
 	if(!$c)
 		echo"错误:".mysql_errno()." 错误原因：".mysql_error();
         return 0;
@@ -148,7 +148,7 @@ if(!$res) {
 		
        $b="insert into $table(classname,ippath)value('$add','$add1')";
 	    //$b="insert into $table(ippath)value('$add')";
-		$c=mysql_query($b);
+		$c=$this->res->query($b);
 	if(!$c)
 		echo"错误:".mysql_errno()." 错误原因：".mysql_error();
         return 0;
@@ -156,7 +156,7 @@ if(!$res) {
 	 public function inserttable($table)
     {
 		$newtable="create table if not exists $table(classname varchar(50) not null,ippath varchar(300) not null)";   
-	if(!mysql_query($newtable))
+	if(!$this->res->query($newtable))
 {
 		echo "创建数据表出错，错误号：".mysql_errno()." 错误原因：".mysql_error();
 } 
@@ -168,12 +168,12 @@ if(!$res) {
     public function deletedata($table,$where)
     {
         $sqlStr = "delete from $table where classname='$where'";
-        return mysql_query($sqlStr);
+        return $this->res->query($sqlStr);
     }
 	 public function deletetable($table)
     {
-		$drop=mysql_query("drop table $table"); 
-    if(!mysql_query($drop))
+		$drop=$this->res->query("drop table $table"); 
+    if(!$this->res->query($drop))
 {
 		//echo "删除数据表出错，错误号：".mysql_errno()." 错误原因：".mysql_error();
 } 
