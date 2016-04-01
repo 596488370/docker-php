@@ -6,4 +6,5 @@ FROM daocloud.io/php:5.6-apache
 RUN docker-php-ext-install pdo_mysql
 
 # /php/ 为 Apache 目录
-COPY first/* /var/www/html/
+ADD ./first* /var/www/html/
+#COPY first/* /var/www/html/
